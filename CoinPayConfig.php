@@ -1,0 +1,69 @@
+<?php
+
+require_once "./sdk/CoinPayConfigInterface.php";
+
+class CoinPayConfig extends \CoinPayConfigInterface
+{
+    /**
+     * 系统secret加密字符串
+     * 【注意:请勿泄露该key,如果不慎泄露请登录后台进行重置该key】
+     * @return string
+     */
+    public function GetSecret()
+    {
+        return "";
+    }
+
+    /**
+     * 设置当前应用AppID
+     * @return string
+     */
+    public function GetAppId()
+    {
+        return "";
+    }
+
+
+    /**
+     * 设置默认POST回调url
+     * @return string
+     */
+    public function GetNotifyUrl()
+    {
+        return "";
+    }
+
+    /**
+     * 设置同步返回url
+     * @return string
+     */
+    public function GetReturnUrl()
+    {
+        return "";
+    }
+
+    /**
+     * 设置当前提交参数字符编码 默认UTF-8
+     * @return string
+     */
+    public function GetPostCharset()
+    {
+        return "UTF-8";
+    }
+
+    public function GetAttach()
+    {
+        // TODO: Implement GetAttach() method.
+    }
+
+    public function GetBody()
+    {
+        // TODO: Implement GetBody() method.
+    }
+
+    public function GetTransCurrency()
+    {
+        // TODO: Implement GetTransCurrency() method. 
+        // 默认CNY， 可选USD，也可以在下单set
+    }
+}
